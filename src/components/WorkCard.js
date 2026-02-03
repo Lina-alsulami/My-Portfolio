@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaCode, FaDatabase, FaNetworkWired, FaServer } from 'react-icons/fa';
 
 const WorkCard = (props) => {
-  // دالة لاختيار الأيقونة بناءً على اسم المشروع
+  
   const renderIcon = (title) => {
     if (title.includes("AI") || title.includes("Prompt")) return <FaCode className="project-icon" />;
     if (title.includes("Database") || title.includes("MySQL")) return <FaDatabase className="project-icon" />;

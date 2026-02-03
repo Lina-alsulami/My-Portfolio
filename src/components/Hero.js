@@ -8,19 +8,19 @@ const Hero = () => {
       <div id="stars"></div>
       
       <div className="content">
-        {/* هنا جعلنا الترحيب هو الذي يكتب تلقائياً */}
+        
         <p>
           <Typewriter
             options={{
               strings: ['HI, I’M LINA'],
               autoStart: true,
-              loop: true, // اجعليه false إذا أردتِ أن يكتبها مرة واحدة فقط عند التحميل
+              loop: true, 
               delay: 75,
             }}
           />
         </p>
         
-        {/* كلمة Backend Developer أصبحت ثابتة هنا */}
+        
         <h1>Backend Developer</h1>
 
         <div>

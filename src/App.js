@@ -5,19 +5,21 @@ import Contact from "./routes/Contact"
 import Project from "./routes/Project"
 import About from "./routes/About"
 
-import { Route, Routes } from "react-router-dom";
+
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 
 function App() {
   return (
-    <>
-    <Routes>
-      <Route path="/" element={<Home/>} />
-      <Route path="/contact" element={<Contact/>} />
-      <Route path="/project" element={<Project/>} />
-      <Route path="/about" element={<About/>} />
-    </Routes>
-    </>
+    
+    <BrowserRouter basename="/My-Portfolio">
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/contact" element={<Contact/>} />
+        <Route path="/project" element={<Project/>} />
+        <Route path="/about" element={<About/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
