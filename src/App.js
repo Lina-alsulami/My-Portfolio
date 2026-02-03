@@ -11,15 +11,14 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    
-    <BrowserRouter basename="/My-Portfolio">
+    <>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/project" element={<Project/>} />
         <Route path="/about" element={<About/>} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 
